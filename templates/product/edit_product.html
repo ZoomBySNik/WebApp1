@@ -1,0 +1,22 @@
+{%extends 'base.html' %}
+
+{% block content %}
+
+<form id="update_data" method="post">
+    {% csrf_token %}
+    <p> Введите новое название продукта
+        <input type="text" name="title" size=30 value="{{get_product.title}}">
+    </p>
+    <p> Введите новое описание продукта
+        <input type="text" name="description" size=30 value="{{get_product.description}}">
+    </p>
+    <p> Введите новый вес
+        <input type="text" name="weight" value="{{get_product.weight}}">
+    </p>
+    <p>
+        <button form="update_data" type="submit" class="btn btn-primary">Обновить</button>
+    </p>
+    <p><a href="/detali/">Перейти назад</a></p>
+</form>
+
+{% endblock content%}

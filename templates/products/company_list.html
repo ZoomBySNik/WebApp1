@@ -1,0 +1,32 @@
+{%extends 'base.html' %}
+
+{% block content %}
+<div class="container-ffuid">
+  <div class="row">
+    <div class="col-sm-2">
+      <ul class="naw flex-column">
+          <li class="naw-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'company' %}">
+                  Компании, с которыми мы сотрудничаем
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Продукиця которую мы реализуем</a>
+          </li>
+      </ul>
+    </div>
+    <div class="col-sm-10">
+      <h1>Список компаний, с которыми мы сотрудничаем</h1>
+      {% if company_list %}
+      <ul>
+        {% for company in company_list %}
+        <li>
+          {{company.name}} {{company.adress}}
+        </li>
+          {% endfor %}
+      </ul>
+        {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

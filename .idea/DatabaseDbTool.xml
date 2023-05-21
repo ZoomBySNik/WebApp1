@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseDbTool">
+    <option name="sources">
+      <map>
+        <entry key="localhost">
+          <value>
+            <DataConfigSourceDto>
+              <option name="comment" value="" />
+              <option name="dataBaseType" value="Sqlite" />
+              <option name="database" value="main" />
+              <option name="databaseName" value="localhost" />
+              <option name="databaseSslConfig">
+                <DatabaseSslConfig>
+                  <option name="caFile" value="" />
+                  <option name="clientCertificateFile" value="" />
+                  <option name="clientKeyFile" value="" />
+                  <option name="clientKeyPassword" value="" />
+                  <option name="sslMode" value="REQUIRE" />
+                </DatabaseSslConfig>
+              </option>
+              <option name="databaseVersion">
+                <NameVersion>
+                  <option name="majorVersion" value="3" />
+                  <option name="minorVersion" value="36" />
+                  <option name="name" value="SQLite" />
+                  <option name="version" value="3.36.0" />
+                </NameVersion>
+              </option>
+              <option name="dbFile" value="$PROJECT_DIR$/db.sqlite3" />
+              <option name="driverCombos" value="thin" />
+              <option name="driverType" value="SQLite" />
+              <option name="host" value="localhost" />
+              <option name="jarUrl" value="C:\Users\shuriga.n\AppData\Roaming\JetBrains\PyCharmCE2022.2\jdbc-drivers\Xerial SQLiteJDBC\3.36.0.3\sqlite-jdbc-3.36.0.3.jar" />
+              <option name="myUniqueId" value="4a35c017-665f-4029-bf7b-226a6ec7137a" />
+              <option name="port" value="3306" />
+              <option name="schemaSourceDto">
+                <SchemaSourceDto>
+                  <option name="name" value="main" />
+                  <option name="tableSources">
+                    <list>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="django_migrations" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="app" />
+                              <option name="tableName" value="django_migrations" />
+                              <option name="typeName" value="varchar(255)" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="name" />
+                              <option name="tableName" value="django_migrations" />
+                              <option name="typeName" value="varchar(255)" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="applied" />
+                              <option name="tableName" value="django_migrations" />
+                              <option name="typeName" value="datetime" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="django_migrations" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="name" />
+                              <option name="tableName" value="sqlite_sequence" />
+                              <option name="typeName" value="" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="seq" />
+                              <option name="tableName" value="sqlite_sequence" />
+                              <option name="typeName" value="" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="sqlite_sequence" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="auth_group_permissions" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="group_id" />
+                              <option name="tableName" value="auth_group_permissions" />
+                              <option name="typeName" value="integer" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="permission_id" />
+                              <option name="tableName" value="auth_group_permissions" />
+                              <option name="typeName" value="integer" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="permission_id" />
+                              <option name="indexName" value="auth_group_permissions_group_id_permission_id_0cd325b0_uniq" />
+                              <option name="tableName" value="auth_group_permissions" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="permission_id" />
+                              <option name="indexName" value="auth_group_permissions_permission_id_84c5c92e" />
+                              <option name="tableName" value="auth_group_permissions" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="group_id" />
+                              <option name="indexName" value="auth_group_permissions_group_id_b120cbf9" />
+                              <option name="tableName" value="auth_group_permissions" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="auth_group_permissions" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="auth_user_groups" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="user_id" />
+                              <option name="tableName" value="auth_user_groups" />
+                              <option name="typeName" value="integer" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="group_id" />
+                              <option name="tableName" value="auth_user_groups" />
+                              <option name="typeName" value="integer" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="group_id" />
+                              <option name="indexName" value="auth_user_groups_group_id_97559544" />
+                              <option name="tableName" value="auth_user_groups" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="group_id" />
+                              <option name="indexName" value="auth_user_groups_user_id_group_id_94350c0c_uniq" />
+                              <option name="tableName" value="auth_user_groups" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="user_id" />
+                              <option name="indexName" value="auth_user_groups_user_id_6a12ed8b" />
+                              <option name="tableName" value="auth_user_groups" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="auth_user_groups" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="auth_user_user_permissions" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="user_id" />
+                              <option name="tableName" value="auth_user_user_permissions" />
+                              <option name="typeName" value="integer" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="permission_id" />
+                              <option name="tableName" value="auth_user_user_permissions" />
+                              <option name="typeName" value="integer" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="user_id" />
+                              <option name="indexName" value="auth_user_user_permissions_user_id_a95ead1b" />
+                              <option name="tableName" value="auth_user_user_permissions" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="permission_id" />
+                              <option name="indexName" value="auth_user_user_permissions_permission_id_1fbb5f2c" />
+                              <option name="tableName" value="auth_user_user_permissions" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="permission_id" />
+                              <option name="indexName" value="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" />
+                              <option name="tableName" value="auth_user_user_permissions" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="auth_user_user_permissions" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="django_admin_log" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="object_id" />
+                              <option name="tableName" value="django_admin_log" />
+                              <option name="typeName" value="text" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="object_repr" />
+                              <option name="tableName" value="django_admin_log" />
+                              <option name="typeName" value="varchar(200)" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="action_flag" />
+                              <option name="tableName" value="django_admin_log" />
+                              <option name="typeName" value="smallint unsigned" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="change_message" />
+                              <option name="tableName" value="django_admin_log" />
+                              <option name="typeName" value="text" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="content_type_id" />
+                              <option name="tableName" value="django_admin_log" />
+                              <option name="typeName" value="integer" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="user_id" />
+                              <option name="tableName" value="django_admin_log" />
+                              <option name="typeName" value="integer" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="action_time" />
+                              <option name="tableName" value="django_admin_log" />
+                              <option name="typeName" value="datetime" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="content_type_id" />
+                              <option name="indexName" value="django_admin_log_content_type_id_c4bce8eb" />
+                              <option name="tableName" value="django_admin_log" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="user_id" />
+                              <option name="indexName" value="django_admin_log_user_id_c564eba6" />
+                              <option name="tableName" value="django_admin_log" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="django_admin_log" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="django_content_type" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="app_label" />
+                              <option name="tableName" value="django_content_type" />
+                              <option name="typeName" value="varchar(100)" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="model" />
+                              <option name="tableName" value="django_content_type" />
+                              <option name="typeName" value="varchar(100)" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="model" />
+                              <option name="indexName" value="django_content_type_app_label_model_76bd3d3b_uniq" />
+                              <option name="tableName" value="django_content_type" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="django_content_type" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="auth_permission" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="content_type_id" />
+                              <option name="tableName" value="auth_permission" />
+                              <option name="typeName" value="integer" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="codename" />
+                              <option name="tableName" value="auth_permission" />
+                              <option name="typeName" value="varchar(100)" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="name" />
+                              <option name="tableName" value="auth_permission" />
+                              <option name="typeName" value="varchar(255)" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="content_type_id" />
+                              <option name="indexName" value="auth_permission_content_type_id_2f476e4b" />
+                              <option name="tableName" value="auth_permission" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="codename" />
+                              <option name="indexName" value="auth_permission_content_type_id_codename_01ab375a_uniq" />
+                              <option name="tableName" value="auth_permission" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="auth_permission" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="auth_group" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="name" />
+                              <option name="tableName" value="auth_group" />
+                              <option name="typeName" value="varchar(150)" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="name" />
+                              <option name="indexName" value="sqlite_autoindex_auth_group_1" />
+                              <option name="tableName" value="auth_group" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="auth_group" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="password" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="varchar(128)" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="last_login" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="datetime" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="is_superuser" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="bool" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="username" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="varchar(150)" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="last_name" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="varchar(150)" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="email" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="varchar(254)" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="is_staff" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="bool" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="is_active" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="bool" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="date_joined" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="datetime" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="first_name" />
+                              <option name="tableName" value="auth_user" />
+                              <option name="typeName" value="varchar(150)" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="username" />
+                              <option name="indexName" value="sqlite_autoindex_auth_user_1" />
+                              <option name="tableName" value="auth_user" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="auth_user" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="session_key" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="django_session" />
+                              <option name="typeName" value="varchar(40)" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="session_data" />
+                              <option name="tableName" value="django_session" />
+                              <option name="typeName" value="text" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="expire_date" />
+                              <option name="tableName" value="django_session" />
+                              <option name="typeName" value="datetime" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="session_key" />
+                              <option name="indexName" value="sqlite_autoindex_django_session_1" />
+                              <option name="tableName" value="django_session" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="expire_date" />
+                              <option name="indexName" value="django_session_expire_date_a5c62663" />
+                              <option name="tableName" value="django_session" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="django_session" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="products_product" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="title" />
+                              <option name="tableName" value="products_product" />
+                              <option name="typeName" value="text" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="description" />
+                              <option name="tableName" value="products_product" />
+                              <option name="typeName" value="text" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="weight" />
+                              <option name="tableName" value="products_product" />
+                              <option name="typeName" value="text" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="company_id" />
+                              <option name="tableName" value="products_product" />
+                              <option name="typeName" value="bigint" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="company_id" />
+                              <option name="indexName" value="products_product_company_id_58565ec8" />
+                              <option name="tableName" value="products_product" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="products_product" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="products_company" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="name" />
+                              <option name="tableName" value="products_company" />
+                              <option name="typeName" value="varchar(120)" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="adress" />
+                              <option name="tableName" value="products_company" />
+                              <option name="typeName" value="varchar(120)" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="products_company" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="products_status" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="name" />
+                              <option name="tableName" value="products_status" />
+                              <option name="typeName" value="varchar(120)" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="products_status" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="id" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="products_productinstance" />
+                              <option name="typeName" value="integer" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="inv_number" />
+                              <option name="tableName" value="products_productinstance" />
+                              <option name="typeName" value="varchar(120)" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="due_back" />
+                              <option name="tableName" value="products_productinstance" />
+                              <option name="typeName" value="date" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="product_id" />
+                              <option name="tableName" value="products_productinstance" />
+                              <option name="typeName" value="bigint" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="status_id" />
+                              <option name="tableName" value="products_productinstance" />
+                              <option name="typeName" value="bigint" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="product_id" />
+                              <option name="indexName" value="products_productinstance_product_id_2dd89c7a" />
+                              <option name="tableName" value="products_productinstance" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="status_id" />
+                              <option name="indexName" value="products_productinstance_status_id_a98d1706" />
+                              <option name="tableName" value="products_productinstance" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="products_productinstance" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="type" />
+                              <option name="tableName" value="sqlite_master" />
+                              <option name="typeName" value="text" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="name" />
+                              <option name="tableName" value="sqlite_master" />
+                              <option name="typeName" value="text" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="tbl_name" />
+                              <option name="tableName" value="sqlite_master" />
+                              <option name="typeName" value="text" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="rootpage" />
+                              <option name="tableName" value="sqlite_master" />
+                              <option name="typeName" value="int" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="sql" />
+                              <option name="tableName" value="sqlite_master" />
+                              <option name="typeName" value="text" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="databaseType" value="Sqlite" />
+                        <option name="schema" value="main" />
+                        <option name="tableName" value="sqlite_master" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                    </list>
+                  </option>
+                </SchemaSourceDto>
+              </option>
+              <option name="sid" value="" />
+              <option name="url" value="jdbc:sqlite:C:/Users/shuriga.n/Applications/PP/venv/Django/TP/WebApp1/db.sqlite3" />
+              <option name="userName" value="" />
+              <option name="driverVersion">
+                <NameVersion>
+                  <option name="majorVersion" value="3" />
+                  <option name="minorVersion" value="36" />
+                  <option name="name" value="SQLite JDBC" />
+                  <option name="version" value="3.36.0.3" />
+                </NameVersion>
+              </option>
+            </DataConfigSourceDto>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

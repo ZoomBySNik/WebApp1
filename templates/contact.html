@@ -1,0 +1,15 @@
+{%extends 'base.html' %}
+
+{% block content %}
+
+<h1>Contact</h1>
+<p>This is templates</p>
+<p>{{my_text}}</p>
+<p>{{my_number}}</p>
+<ul type="none">
+    {%for i in my_list %}
+        <li>{{forloop.counter}}) {{i}}</li>
+    {%endfor%}
+</ul>
+<p>{{my_list}}</p>
+{% endblock content %}

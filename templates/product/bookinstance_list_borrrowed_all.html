@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{%block content%}
+    <div class="col-sm-10">
+        <h1>Все заказы</h1>
+        {% if productinstance_list %}
+        <table class="table" border="5">
+            <thead>
+                <tr align="center">
+                    <th scope="col">Продукт</th>
+                    <th scope="col">Дата заказа</th>
+                    <th scope="col">Заказчик</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for productinst in productinstance_list %}
+                <tr align="center">
+                    <th>{{productinst.product}}</th>
+                    <td>{{productinst.due_back}}</td>
+                    <td>{{productinst.get_full_name}}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+            <p>У вас нет заказов</p>
+        {% endif %}
+    </div>
+{% endblock %}

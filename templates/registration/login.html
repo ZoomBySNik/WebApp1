@@ -1,0 +1,26 @@
+<h1>Авторизация</h1>
+
+{% if form.errors %}
+    <p> Ваше имя пользователя и пароль не совпали. Попробуйте ещё раз.</p>
+{% endif %}
+{% if next %}
+    {% if user.is_aunthenticated %}
+        <p> Вы не имеете доступа к этой странице. Войдите в систему с другими параметрами</p>
+        {% else %}
+            <p> Войдите в систему, чтобы увидеть эту страницу</p>
+    {% endif %}
+{% endif %}
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td> {{ form.username.label_tag }}</td>
+            <td> {{ form.username }} </td>
+        </tr>
+        <tr>
+            <td> {{ form.password.label_tag }}</td>
+            <td> {{ form.password }} </td>
+        </tr>
+    </table>
+    <input type="submit" value="Вход" class="btn">
+</form>

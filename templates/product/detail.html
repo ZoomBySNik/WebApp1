@@ -1,0 +1,30 @@
+{%extends 'base.html' %}
+
+{% block content %}
+<button type="button" class="btn btn-success" onclick="window.location.href='/create'">Создать</button>
+<table class="table">
+    <tr align="center">
+        <th scope="col">Идентификатор в базе</th>
+        <th scope="col">Название</th>
+        <th scope="col">Описание</th>
+        <th scope="col">Вес, г</th>
+        <th scope="col">Комапнияя</th>
+        <th scope="col">Подробное описание</th>
+        <th scope="col">Редактировать</th>
+        <th scope="col">Удалить</th>
+    </tr>
+    {% for i in my_obj %}
+        <tr align="center">
+            <th>{{i.id}}</th>
+            <td>{{i.title}}</td>
+            <td>{{i.description|truncatechars:15}}</td>
+            <td>{{i.weight}}</td>
+            <td>{{i.company}}</td>
+            <td><a href="/detail_product/{{i.id}}">Подробнее о продукте</a> </td>
+            <td><a href="/product_edit/{{i.id}}">Редактировать</a> </td>
+            <td><a href="/product_delete/{{i.id}}">Удалить</a> </td>
+        </tr>
+    {% endfor %}
+</table>
+
+{% endblock content%}
